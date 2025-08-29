@@ -61,7 +61,7 @@
         <div
           class="text-sm md:text-base text-white flex items-center justify-center gap-2 h-12 px-5 rounded-full bg-[#00A63E]"
         >
-          <h1><span>2</span> copy</h1>
+          <h1><span id="copy-count">0</span> copy</h1>
         </div>
       </div>
     </nav>
@@ -115,9 +115,9 @@
               </div>
               <div class="flex gap-3 mt-4">
                 <button
-                  class="flex-1 border rounded-md py-2 hover:bg-gray-100 transition"
+                  class="copy-btn flex-1 border rounded-md py-2 hover:bg-gray-100 transition"
                 >
-                  <i class="heart-icon fa-solid fa-copy"></i> Copy
+                  <i class=" heart-icon fa-solid fa-copy"></i> Copy
                 </button>
                 <button
                   id="call-button-National"
@@ -140,7 +140,7 @@
                   />
                   <i class="heart-icon fa-regular fa-heart"></i>
                 </div>
-                <h1 class="text-lg font-b old mt-3">Police Helpline Number</h1>
+                <h1 class="text-lg font-bold mt-3">Police Helpline number</h1>
                 <p class="text-gray-500 text-sm">Police</p>
                 <h2 class="text-2xl font-extrabold mt-2">999</h2>
                 <span
@@ -150,7 +150,7 @@
               </div>
               <div class="flex gap-3 mt-4">
                 <button
-                  class="flex-1 border rounded-md py-2 hover:bg-gray-100 transition"
+                  class="copy-btn flex-1 border rounded-md py-2 hover:bg-gray-100 transition"
                 >
                   <i class="fa-solid fa-copy"></i> Copy
                 </button>
@@ -185,12 +185,12 @@
               </div>
               <div class="flex gap-3 mt-4">
                 <button
-                  class="flex-1 border rounded-md py-2 hover:bg-gray-100 transition"
+                  class="copy-btn flex-1 border rounded-md py-2 hover:bg-gray-100 transition"
                 >
                   <i class="fa-solid fa-copy"></i> Copy
                 </button>
                 <button
-                  id="call-button"
+                  id="call-button-fire"
                   class="flex-1 bg-green-600 rounded-md py-2 text-white hover:bg-green-700 transition"
                 >
                   <i class="fa-solid fa-phone"></i> Call
@@ -220,12 +220,12 @@
               </div>
               <div class="flex gap-3 mt-4">
                 <button
-                  class="flex-1 border rounded-md py-2 hover:bg-gray-100 transition"
+                  class="copy-btn flex-1 border rounded-md py-2 hover:bg-gray-100 transition"
                 >
                   <i class="fa-solid fa-copy"></i> Copy
                 </button>
                 <button
-                  id="call-button"
+                  id="call-button-ambulance"
                   class="flex-1 bg-green-600 rounded-md py-2 text-white hover:bg-green-700 transition"
                 >
                   <i class="fa-solid fa-phone"></i> Call
@@ -260,7 +260,7 @@
                   <i class="fa-solid fa-copy"></i> Copy
                 </button>
                 <button
-                  id="call-button"
+                  id="call-button-woman"
                   class="flex-1 bg-green-600 rounded-md py-2 text-white hover:bg-green-700 transition"
                 >
                   <i class="fa-solid fa-phone"></i> Call
@@ -291,13 +291,13 @@
                 >
               </div>
               <div class="flex gap-3 mt-4">
-                <button
-                  class="flex-1 border rounded-md py-2 hover:bg-gray-100 transition"
+                <button 
+                  class="copy-btn flex-1 border rounded-md py-2 hover:bg-gray-100 transition"
                 >
                   <i class="fa-solid fa-copy"></i> Copy
                 </button>
                 <button
-                  id="call-button"
+                  id="call-button-anti"
                   class="flex-1 bg-green-600 rounded-md py-2 text-white hover:bg-green-700 transition"
                 >
                   <i class="fa-solid fa-phone"></i> Call
@@ -315,21 +315,23 @@
               <h1>Call History</h1>
             </div>
 
-            <button
+            <button id="clear-btn"
               class="bg-[#00A63E] text-white px-[25px] py-[10px] rounded-full"
             >
               Clear
             </button>
           </div>
 
-          <div id="history-container" class="flex justify-between items-center mt-6 space-y-4 bg-[#f4f9f6] p-4 rounded-lg">
+       <div id="history-container" 
+     class="flex flex-col justify-between items-center mt-6 space-y-4 bg-[#f4f9f6] p-4 rounded-lg  ">
+</div>
 
-          </div>
         </aside>
       </section>
     </main>
 
     <script src="./scripts/callButton.js"></script>
     <script src="./scripts/hearthClick.js"></script>
-  </body>
+    <script src="./scripts/clearBtn.js"></script>
+    <script src="./scripts/copyButton.js"></script>
 </html>
